@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint:es",
+    "lint:fix": "npm run lint:es:fix",
     "lint:es": "eslint src/** --ext .ts,.tsx",
     "lint:es:fix": "eslint src/** --ext .ts,.tsx --fix"
   },
