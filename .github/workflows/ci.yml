@@ -15,6 +15,7 @@ jobs:
         node-version: '13.x'
     
     - name: Cache node modules
+      uses: actions/cache@v1
       env:
         cache-name: cache-node-modules
       with:
