@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ryukalice/ryukalice#readme",
   "dependencies": {
+    "@types/styled-components": "^5.1.0",
     "next": "^9.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
