@@ -3,7 +3,6 @@ import Document, {
   Head,
   Main,
   NextScript,
-  // eslint-disable-next-line no-unused-vars
   DocumentContext,
 } from "next/document";
 
