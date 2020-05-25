@@ -30,7 +30,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
-    '@typescript-eslint/no-unused-vars': 'error'
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   settings: {
     "import/resolver": {
