@@ -25,11 +25,19 @@
     "url": "https://github.com/ryukalice/ryukalice/issues"
   },
   "homepage": "https://github.com/ryukalice/ryukalice#readme",
+  "browser": {
+    "fs": false
+  },
   "dependencies": {
     "@types/styled-components": "^5.1.0",
+    "gray-matter": "^4.0.2",
+    "install": "^0.13.0",
     "next": "^9.4.0",
+    "npm": "^6.14.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2",
     "styled-components": "^5.1.0",
     "styled-media-query": "^2.1.2"
   },
