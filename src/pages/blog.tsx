@@ -8,16 +8,11 @@ type PostType = {
   date: string;
 };
 
-export default function Home({ posts }: { posts: PostType[] }) {
+export default function Blog({ posts }: { posts: PostType[] }) {
   return (
     <>
-      <h1>Welcome to ryukalice.com</h1>
+      <h1>Blog</h1>
       <section>
-        <Link href="/blog">
-          <h2>
-            <a>Blog</a>
-          </h2>
-        </Link>
         <ul>
           {posts.map((post) => (
             <li key={post.id}>
