@@ -1,23 +1,17 @@
 import styled from "styled-components";
-import Link from "next/link";
+import { layoutColor } from "styles/Color";
+import { Logo } from "components/layout/header/Logo";
 
-const HeaderWrapper = styled.header`
+const Wrapper = styled.header`
   position: fixed;
-  height: 80px;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: ${layoutColor};
 `;
 
-const Logo = styled.h1`
-  font-size: 24px;
-`;
-
-const Header = () => (
-  <HeaderWrapper>
-    <Link href="/">
-      <a>
-        <Logo>Ryukalice</Logo>
-      </a>
-    </Link>
-  </HeaderWrapper>
+export const Header = () => (
+  <Wrapper>
+    <Logo />
+  </Wrapper>
 );
-
-export default Header;
