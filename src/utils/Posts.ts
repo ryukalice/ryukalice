@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import remark from "remark";
 
 const html = require("remark-html");
+const highlight = require("remark-highlight.js");
 
 const dir = path.join(process.cwd(), "blog");
 
@@ -28,7 +29,10 @@ export function getPostIds() {
 
 export async function getPost(id: string) {
   const mattered = matter(fs.readFileSync(path.join(dir, `${id}.md`), "utf8"));
-  const processed = await remark().use(html).process(mattered.content);
+  const processed = await remark()
+    .use(highlight)
+    .use(html)
+    .process(mattered.content);
   const content = processed.toString();
 
   return {
