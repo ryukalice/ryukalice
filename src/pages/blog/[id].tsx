@@ -16,6 +16,7 @@ export const Post = ({ post }: { post: PostType }) => (
     </Head>
     <article>
       <h1>{post.title}</h1>
+      <div className="posted-on">{post.date}</div>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
   </>
