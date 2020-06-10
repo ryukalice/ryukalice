@@ -4,6 +4,7 @@ import { Logo } from "components/layout/header/Logo";
 
 const Wrapper = styled.header`
   position: fixed;
+  z-index: 999;
   top: 0;
   height: 60px;
   width: 100%;
