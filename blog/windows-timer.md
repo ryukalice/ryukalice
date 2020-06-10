@@ -1,9 +1,8 @@
 ---
 title: 'Windows/C++による処理時間計測とtimeBeginPeriod'
 date: '2013-10-22'
+category: 'C++'
 ---
-
-2013年に書いた過去記事のサルベージ記事です。
 
 ## 計測
 

@@ -7,14 +7,20 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 180%;
     background-color: #fafafa;
     color: #333333;
+    word-break: break-all;
   }
 
   article {
+    .posted-on {
+      color: #aaa;
+      text-align: right;
+    }
+
     h1 {
       font-size: 26px;
       line-height: 150%;
       margin-top: 60px;
-      margin-bottom: 32px;
+      margin-bottom: 8px;
     }
 
     h2 {
@@ -50,18 +56,17 @@ export const GlobalStyle = createGlobalStyle`
       font-style: italic;
     }
 
-    ul {
+    ul, ol {
       padding: 0;
+    }
+
+    ul {
+      list-style: square;
     }
 
     li {
       margin-left: 24px;
       margin-top: 8px;
-      list-style: square;
-    }
-
-    a {
-      color: #00a0f0;
     }
 
     p {
@@ -69,9 +74,14 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  a:hover {
-    color: #e01090;
-    transition: all 0.2s ease;
+
+  a {
+    color: #ff6600;
+
+    :hover {
+      color: #aaa;
+      transition: all 0.2s ease;
+    }
   }
 
   code {
