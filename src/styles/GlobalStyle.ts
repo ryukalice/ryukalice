@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
+      color: #444444;
       font-size: 26px;
       line-height: 150%;
       margin-top: 60px;
@@ -24,24 +25,29 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h2 {
-      font-size: 22px;
-      line-height: 150%;
-      margin-top: 40px;
-      padding-bottom: 8px;
-      border-bottom: solid 3px #555555;
+      font-size: 24px;
+      font-weight: normal;
+      text-align: left;
+      border-left: 5px solid #666;
+      margin: 64px 0 8px 0px;
+      padding: 8px 0 8px 8px;
+    }
+
+    h2:nth-of-type(1) {
+      margin-top: 32px;
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: normal;
       text-align: left;
-      border-bottom: 2px solid $break_border_color;
+      border-bottom: 2px solid #ccc;
       margin: 32px 0 8px 0;
       padding: 15px 0 5px 0;
     }
 
     h4 {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: normal;
       text-align: left;
       margin: 32px 0 -20px 0;
@@ -70,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     p {
-      margin-top: 32px;
+      margin-top: 28px;
     }
   }
 
