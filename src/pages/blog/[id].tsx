@@ -1,7 +1,9 @@
 /* eslint-disable react/no-danger */
 import { getPostIds, getPost } from "utils/Posts";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { GetStaticProps, GetStaticPaths } from "next";
+import { ShareButtons } from "components/ShareButtons";
 
 type PostType = {
   date: string;
@@ -19,6 +21,8 @@ export const Post = ({ post }: { post: PostType }) => (
       <div className="posted-on">{post.date}</div>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
+
+    <ShareButtons url={`http://ryukalice.com${useRouter().asPath}`} />
   </>
 );
 
