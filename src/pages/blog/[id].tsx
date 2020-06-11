@@ -3,6 +3,7 @@ import { getPostIds, getPost } from "utils/Posts";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { GetStaticProps, GetStaticPaths } from "next";
+import { Article } from "components/Article";
 import { ShareButtons } from "components/ShareButtons";
 
 type PostType = {
@@ -16,11 +17,11 @@ export const Post = ({ post }: { post: PostType }) => (
     <Head>
       <title>{post.title}</title>
     </Head>
-    <article>
+    <Article>
       <h1>{post.title}</h1>
       <div className="posted-on">{post.date}</div>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </article>
+    </Article>
 
     <ShareButtons url={`http://ryukalice.com${useRouter().asPath}`} />
   </>
