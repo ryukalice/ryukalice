@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
+import { Article } from "components/Article";
 import { getPosts } from "utils/Posts";
 
 type PostType = {
@@ -10,7 +11,7 @@ type PostType = {
 
 export default function Blog({ posts }: { posts: PostType[] }) {
   return (
-    <>
+    <Article>
       <h1>Blog</h1>
       <section>
         <ul>
@@ -23,7 +24,7 @@ export default function Blog({ posts }: { posts: PostType[] }) {
           ))}
         </ul>
       </section>
-    </>
+    </Article>
   );
 }
 

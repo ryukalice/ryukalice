@@ -82,10 +82,10 @@ export const GlobalStyle = createGlobalStyle`
 
 
   a {
-    color: #ff6600;
+    color: #888;
 
     :hover {
-      color: #aaa;
+      color: #ff6600;
       transition: all 0.2s ease;
     }
   }

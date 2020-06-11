@@ -1,6 +1,7 @@
-import { GetStaticProps } from "next";
-import Link from "next/link";
-import { getPosts } from "utils/Posts";
+import { MainVisual } from "components/top/MainVisual";
+import { Profile } from "components/top/Profile";
+import { Skills } from "components/top/Skills";
+import { Contact } from "components/top/Contact";
 
 type PostType = {
   id: string;
@@ -8,26 +9,13 @@ type PostType = {
   date: string;
 };
 
-export default function Home({ posts }: { posts: PostType[] }) {
+export default function Home() {
   return (
     <>
-      <h1>Ryukalice</h1>
-
-      <section>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.id}>
-              <Link href="/blog/[id]" as={`/blog/${post.id}`}>
-                <a>{post.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <MainVisual />
+      <Profile />
+      <Skills />
+      <Contact />
     </>
   );
 }
-
-export const getStaticProps: GetStaticProps = async () => {
-  return { props: { posts: getPosts() } };
-};
