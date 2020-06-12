@@ -17,6 +17,7 @@ export default function Home() {
     <>
       <Head>
         <title>Ryukalice</title>
+        <meta key="ogtitle" property="og:title" content="Ryukalice" />
       </Head>
       <MainVisual />
       <Profile />
