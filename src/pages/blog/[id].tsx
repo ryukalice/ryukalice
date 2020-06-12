@@ -16,6 +16,11 @@ export const Post = ({ post }: { post: PostType }) => (
   <>
     <Head>
       <title>{`${post.title} | Ryukalice`}</title>
+      <meta
+        key="ogtitle"
+        property="og:title"
+        content={`${post.title} | Ryukalice`}
+      />
     </Head>
     <Article>
       <h1>{post.title}</h1>

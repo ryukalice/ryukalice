@@ -15,6 +15,7 @@ export default function Blog({ posts }: { posts: PostType[] }) {
     <>
       <Head>
         <title>Blog | Ryukalice</title>
+        <meta key="ogtitle" property="og:title" content="Blog | Ryukalice" />
       </Head>
 
       <Article>
