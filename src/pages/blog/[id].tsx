@@ -15,7 +15,7 @@ type PostType = {
 export const Post = ({ post }: { post: PostType }) => (
   <>
     <Head>
-      <title>{post.title}</title>
+      <title>{`${post.title} | Ryukalice`}</title>
     </Head>
     <Article>
       <h1>{post.title}</h1>

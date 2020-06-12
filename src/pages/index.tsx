@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { MainVisual } from "components/top/MainVisual";
 import { Profile } from "components/top/Profile";
 import { Skills } from "components/top/Skills";
@@ -14,6 +15,9 @@ type PostType = {
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Ryukalice</title>
+      </Head>
       <MainVisual />
       <Profile />
       <Skills />
