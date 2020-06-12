@@ -22,7 +22,7 @@ export const Contact = () => (
 
         <Item>Facebook: <ExLink href="https://www.facebook.com/ryo.ogihara.5">Ogihara Ryo</ExLink></Item>
 
-        <Item>Twitter<ExLink href="https://twitter.com/ryo_ryukalice">@ryo_ryukalice</ExLink></Item>
+        <Item>Twitter: <ExLink href="https://twitter.com/ryo_ryukalice">@ryo_ryukalice</ExLink></Item>
 
         <Item>RESUME: <ExLink href="https://www.resume.id/ogihara_ryo">Ogihara Ryo</ExLink></Item>
 

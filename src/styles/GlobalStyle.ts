@@ -10,6 +10,14 @@ export const GlobalStyle = createGlobalStyle`
     word-break: break-all;
   }
 
+  p {
+    margin-top: 28px;
+  }
+
+  ul {
+    padding-left: 32px;
+  }
+
   article {
     .posted-on {
       color: #aaa;

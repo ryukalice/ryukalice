@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import Link from "next/link";
 import { Article } from "components/Article";
 import { getPosts } from "utils/Posts";
@@ -11,20 +12,26 @@ type PostType = {
 
 export default function Blog({ posts }: { posts: PostType[] }) {
   return (
-    <Article>
-      <h1>Blog</h1>
-      <section>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.id}>
-              <Link href="/blog/[id]" as={`/blog/${post.id}`}>
-                <a>{post.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Article>
+    <>
+      <Head>
+        <title>Blog | Ryukalice</title>
+      </Head>
+
+      <Article>
+        <h1>Blog</h1>
+        <section>
+          <ul>
+            {posts.map((post) => (
+              <li key={post.id}>
+                <Link href="/blog/[id]" as={`/blog/${post.id}`}>
+                  <a>{post.title}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Article>
+    </>
   );
 }
 
