@@ -26,9 +26,9 @@ export const Post = ({ post }: { post: PostType }) => (
       <h1>{post.title}</h1>
       <div className="posted-on">{post.date}</div>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </Article>
 
-    <ShareButtons url={`http://ryukalice.com${useRouter().asPath}`} />
+      <ShareButtons url={`http://ryukalice.com${useRouter().asPath}`} />
+    </Article>
   </>
 );
 
