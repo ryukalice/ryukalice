@@ -55,6 +55,9 @@ export const Writing = () => (
           <ExLink href="https://note.com/ryo_ryukalice/n/n953d21f66d91">本当に下手な人のための Apex Legends シーズン5 | note</ExLink>
         </li>
         <li>
+          <ExLink href="https://note.com/ryo_ryukalice/m/m939dbeb01ce7">ゼノブレイド2を隅々まで楽しもう(マガジン) | note</ExLink>
+        </li>
+        <li>
           <ExLink href="https://ryukalice.com/blog/freestyle">3on3 FreeStyle というゲームについて語る</ExLink>
         </li>
       </ul>
