@@ -25,6 +25,8 @@ export const Contact = () => (
         <Item>Twitter: <ExLink href="https://twitter.com/ryo_ryukalice">@ryo_ryukalice</ExLink></Item>
 
         <Item>RESUME: <ExLink href="https://www.resume.id/ogihara_ryo">Ogihara Ryo</ExLink></Item>
+        
+        <Item>note: <ExLink href="https://note.com/ryo_ryukalice">Ryo</ExLink></Item>
 
         <Item>PSNID: ryo021021</Item>
 
