@@ -36,6 +36,9 @@ export const Writing = () => (
       <p>技術とは関係なく、IT業界そのものに対しての思想や、ITエンジニアを目指す方々へ向けた記事もよく読まれています。</p>
       <ul>
         <li>
+          <ExLink href="https://zenn.dev/ryo_ryukalice/articles/b50b75b33bbd8098c609">勤務場所と勤務時間に制限のあるソフトウェアエンジニアの生存戦略</ExLink>
+        </li>
+        <li>
           <ExLink href="https://ryukalice.com/blog/career-path">web系エンジニアへのキャリアチェンジについて</ExLink>
         </li>
         <li>
